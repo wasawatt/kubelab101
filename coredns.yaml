@@ -58,8 +58,10 @@ data:
         ready
         kubernetes cluster.local in-addr.arpa ip6.arpa {
           pods insecure
+          upstream
           fallthrough in-addr.arpa ip6.arpa
         }
+        proxy . 8.8.8.8
         prometheus :9153
         cache 30
         loop
