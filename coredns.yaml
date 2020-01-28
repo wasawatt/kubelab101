@@ -61,7 +61,7 @@ data:
           upstream
           fallthrough in-addr.arpa ip6.arpa
         }
-        proxy . 8.8.8.8
+        forward . /etc/resolv.conf
         prometheus :9153
         cache 30
         loop
